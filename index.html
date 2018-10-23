@@ -1,0 +1,55 @@
+<!-- adam razzak - angular learning -->
+<!doctype html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <div ng-app="nfl-App">
+
+      <div class="app-container" ng-controller="nflAppController as nflApp">
+        <header>
+            <h1>Jason vs. Osi</h1>
+            <h2>How Wrong Can You Be?</h2>
+        </header>
+
+        <div class="grid-container">
+          <div class="jason-block">
+            <h3>Jason</h2>
+            <!-- <div ng-switch="nflApp.scores.jason">
+            </div> -->
+            <img class="profile-img" ng-if="nflApp.scores.jason >= 0" ng-src="img/jason-happy-crop-2.jpg ">
+            <img class="profile-img" ng-if="nflApp.scores.jason < 0" ng-src="img/jason-sad.jpg ">
+            <p>{{nflApp.scores.jason}}</p>
+
+            <input class="score-input" type="number" value="0" ng-model="nflApp.inputs.jasonScore" placeholder="Enter Jason's last score">
+            <br />
+            <button class="score-button" ng-click="nflApp.updateScore('jason', nflApp.inputs.jasonScore)">Add Score for Jason!</button>
+          </div>
+          <div class="mark-block">
+            <img class="profile-img" ng-if="nflApp.scores.osi == nflApp.scores.jason" ng-src="img/mark-happy-troll-left.PNG ">
+            <img class="profile-img" ng-if="nflApp.scores.osi > nflApp.scores.jason" ng-src="img/mark-happy-left.PNG ">
+            <img class="profile-img" ng-if="nflApp.scores.osi < nflApp.scores.jason" ng-src="img/mark-happy-right.PNG ">
+            <br />
+            <button class="reset-button" ng-click="nflApp.resetScores()">Reset The Scores</button>
+
+          </div>
+          <div class="osi-block">
+            <h3>Osi</h2>
+            <img class="profile-img" ng-if="nflApp.scores.osi >= 0" ng-src="img/osi-happy-crop.jpg ">
+            <img class="profile-img" ng-if="nflApp.scores.osi < 0" ng-src="img/osi-react-crop.jpg ">
+            <p>{{nflApp.scores.osi}}</p>
+
+            <input class="score-input" type="number" ng-model="nflApp.inputs.osiScore"  placeholder="Enter Osi's last score">
+            <br />
+            <button class="score-button" ng-click="nflApp.updateScore('osi', nflApp.inputs.osiScore)">Add Score for Osi!</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    
+  </body>
+</html>
