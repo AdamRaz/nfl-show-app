@@ -1,5 +1,7 @@
 # nfl-show-app
 
+**see the live page at this github pages link**: https://adamraz.github.io/nfl-show-app/
+
 Uses AngularJS 1.x 
 
 Pundit prediction scoring app with Jason Bell, Mark Chapman and Osi umenyiora from BBC's NFL Show. 
