@@ -22,7 +22,7 @@ body {
 }
 
 header {
-    height: 15%;
+    height: 20%;
     margin: 0 auto;
 }
 
@@ -31,8 +31,12 @@ h1 {
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
 
+}
+
+h3 {
+    font-size: 2rem;
 }
 
 .grid-container {
@@ -41,9 +45,9 @@ h2 {
     grid-template-rows: 3fr 1fr 1fr 1fr 1fr;
     /* height: 80vh; */
     /* height: 1000px; */
-    /* max-height: 1200px; */
+    height: 80vh;
     margin: 0 auto;
-
+    /* overflow: hidden; */
 
 
 }
@@ -101,11 +105,13 @@ p {
 .profile-img { 
     height: 160px;
     width: 120px;
+    border: 50px solid white;
+    border-radius: 100px;
 }
 
 .score-input {
     border-radius: 12px;
-    background-color: lightgrey;
+    background-color: white;
     color: darkblue;
     font-weight: bold;
     /* height: 48px; */
@@ -115,7 +121,7 @@ p {
 
 .score-button {
     border-radius: 12px;
-    background-color: lightgrey;
+    background-color: gainsboro;
     color: darkblue;
     font-weight: bold;
 }
