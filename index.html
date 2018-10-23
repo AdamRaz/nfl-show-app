@@ -17,7 +17,7 @@
 
         <div class="grid-container">
           <div class="jason-block">
-            <h3>Jason</h2>
+            <h3>Jason</h3>
             <!-- <div ng-switch="nflApp.scores.jason">
             </div> -->
             <img class="profile-img" ng-if="nflApp.scores.jason >= 0" ng-src="img/jason-happy-crop-2.jpg ">
@@ -29,7 +29,7 @@
             <button class="score-button" ng-click="nflApp.updateScore('jason', nflApp.inputs.jasonScore)">Add Score for Jason!</button>
           </div>
           <div class="mark-block">
-            <img class="profile-img" ng-if="nflApp.scores.osi == nflApp.scores.jason" ng-src="img/mark-happy-troll-left.PNG ">
+            <img class="profile-img" ng-if="nflApp.scores.osi == nflApp.scores.jason" ng-src="img/chappers.jpg ">
             <img class="profile-img" ng-if="nflApp.scores.osi > nflApp.scores.jason" ng-src="img/mark-happy-left.PNG ">
             <img class="profile-img" ng-if="nflApp.scores.osi < nflApp.scores.jason" ng-src="img/mark-happy-right.PNG ">
             <br />
@@ -37,7 +37,7 @@
 
           </div>
           <div class="osi-block">
-            <h3>Osi</h2>
+            <h3>Osi</h3>
             <img class="profile-img" ng-if="nflApp.scores.osi >= 0" ng-src="img/osi-happy-crop.jpg ">
             <img class="profile-img" ng-if="nflApp.scores.osi < 0" ng-src="img/osi-react-crop.jpg ">
             <p>{{nflApp.scores.osi}}</p>
